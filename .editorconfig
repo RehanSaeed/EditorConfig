@@ -21,7 +21,7 @@ indent_style = tab
 indent_size = 2
 
 # Configuration Files
-[*.{json,xml,yml,props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
+[*.{json,xml,config,yml}]
 indent_size = 2
 
 # Markdown Files
@@ -50,6 +50,13 @@ dotnet_style_qualification_for_property = true:warning
 
 # C# Code Style Settings (See https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference)
 [*.cs]
+# Indentation Options
+csharp_indent_block_contents = true:warning
+csharp_indent_braces = false:warning
+csharp_indent_case_contents = true:warning
+csharp_indent_switch_labels = true:warning
+csharp_indent_labels = no_change:warning
+# Style Options
 csharp_style_conditional_delegate_call = true:warning
 csharp_style_expression_bodied_accessors = true:warning
 csharp_style_expression_bodied_constructors = true:warning
@@ -64,10 +71,37 @@ csharp_style_throw_expression = true:warning
 csharp_style_var_elsewhere = true:warning
 csharp_style_var_for_built_in_types = true:warning
 csharp_style_var_when_type_is_apparent = true:warning
+# New Line Options
 csharp_new_line_before_catch = true:warning
 csharp_new_line_before_else = true:warning
 csharp_new_line_before_finally = true:warning
 csharp_new_line_before_members_in_anonymous_types = true:warning
 csharp_new_line_before_members_in_object_initializers = true:warning
-csharp_new_line_before_open_brace = all:warning
+# csharp_new_line_before_open_brace = all:warning (See https://github.com/madskristensen/EditorConfigLanguage/issues/11)
 csharp_new_line_between_query_expression_clauses = true:warning
+# Spacing Options (Undocumented)
+# csharp_space_after_cast = false:warning
+# csharp_space_after_colon_in_inheritance_clause = true:warning
+# csharp_space_after_comma = true:warning
+# csharp_space_after_dot = false:warning
+# csharp_space_after_keywords_in_control_flow_statements = true:warning
+# csharp_space_after_semicolon_in_for_statement = true:warning
+# csharp_space_around_binary_operators = before_and_after:warning
+# csharp_space_around_declaration_statements = ignore:warning
+# csharp_space_before_colon_in_inheritance_clause = true:warning
+# csharp_space_before_comma = false:warning
+# csharp_space_before_dot = false:warning
+# csharp_space_before_semicolon_in_for_statement = false:warning
+# csharp_space_before_open_square_brackets = false:warning
+# csharp_space_between_empty_square_brackets = false:warning
+# csharp_space_between_method_declaration_name_and_open_parenthesis = false:warning
+# csharp_space_between_method_declaration_parameter_list_parentheses = false:warning
+# csharp_space_between_method_declaration_empty_parameter_list_parentheses = false:warning
+# csharp_space_between_method_call_name_and_opening_parenthesis = false:warning
+# csharp_space_between_method_call_parameter_list_parentheses = false:warning
+# csharp_space_between_method_call_empty_parameter_list_parentheses = false:warning
+# csharp_space_between_square_brackets = false:warning
+# csharp_space_between_parentheses = expressions:warning
+# Wrapping Options
+csharp_preserve_single_line_blocks = true:warning
+csharp_preserve_single_line_statements = false:warning
