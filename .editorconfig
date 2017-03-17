@@ -29,7 +29,7 @@ indent_size = 2
 trim_trailing_whitespace = false
 
 # Web Files
-[*.{html,js,ts,css,scss}]
+[*.{htm,html,js,ts,css,scss}]
 indent_size = 2
 insert_final_newline = true
 
