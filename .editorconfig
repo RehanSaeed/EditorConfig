@@ -50,7 +50,7 @@ dotnet_style_qualification_for_property = true:warning
 
 # C# Code Style Settings (See https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference)
 [*.cs]
-# Indentation Options
+# Indentation Options (Undocumented - May be removed)
 csharp_indent_block_contents = true:warning
 csharp_indent_braces = false:warning
 csharp_indent_case_contents = true:warning
@@ -77,9 +77,9 @@ csharp_new_line_before_else = true:warning
 csharp_new_line_before_finally = true:warning
 csharp_new_line_before_members_in_anonymous_types = true:warning
 csharp_new_line_before_members_in_object_initializers = true:warning
-# csharp_new_line_before_open_brace = all:warning (See https://github.com/madskristensen/EditorConfigLanguage/issues/11)
+# csharp_new_line_before_open_brace = all:warning (Broken: See https://github.com/madskristensen/EditorConfigLanguage/issues/11)
 csharp_new_line_between_query_expression_clauses = true:warning
-# Spacing Options (Undocumented)
+# Spacing Options (Undocumented - May be removed)
 # csharp_space_after_cast = false:warning
 # csharp_space_after_colon_in_inheritance_clause = true:warning
 # csharp_space_after_comma = true:warning
@@ -102,6 +102,6 @@ csharp_new_line_between_query_expression_clauses = true:warning
 # csharp_space_between_method_call_empty_parameter_list_parentheses = false:warning
 # csharp_space_between_square_brackets = false:warning
 # csharp_space_between_parentheses = expressions:warning
-# Wrapping Options
+# Wrapping Options (Undocumented - May be removed)
 csharp_preserve_single_line_blocks = true:warning
 csharp_preserve_single_line_statements = false:warning
