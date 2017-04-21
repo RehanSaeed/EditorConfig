@@ -81,6 +81,7 @@ csharp_new_line_before_else = true:warning
 csharp_new_line_before_finally = true:warning
 csharp_new_line_before_members_in_anonymous_types = true:warning
 csharp_new_line_before_members_in_object_initializers = true:warning
+# BUG: Warning level cannot be set https://github.com/dotnet/roslyn/issues/18010
 csharp_new_line_before_open_brace = all
 csharp_new_line_between_query_expression_clauses = true:warning
 # Spacing Options (Undocumented)
