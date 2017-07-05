@@ -54,12 +54,12 @@ dotnet_style_qualification_for_property = true:warning
 
 # C# Code Style Settings (See https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference)
 [*.cs]
-# Indentation Options (Undocumented)
+# Indentation Options
 csharp_indent_block_contents = true:warning
 csharp_indent_braces = false:warning
 csharp_indent_case_contents = true:warning
-csharp_indent_switch_labels = true:warning
 csharp_indent_labels = no_change:warning
+csharp_indent_switch_labels = true:warning
 # Style Options
 csharp_style_conditional_delegate_call = true:warning
 csharp_style_expression_bodied_accessors = true:warning
