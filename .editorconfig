@@ -107,7 +107,7 @@ csharp_space_between_method_call_parameter_list_parentheses = false:warning
 csharp_space_between_method_call_empty_parameter_list_parentheses = false:warning
 csharp_space_between_parentheses = expressions:warning
 csharp_space_between_square_brackets = false:warning
-# Wrapping Options (Undocumented)
+# Wrapping Options
 csharp_preserve_single_line_blocks = true:warning
 csharp_preserve_single_line_statements = false:warning
 # Naming Rules (Undocumented)
