@@ -21,7 +21,7 @@ indent_style = tab
 indent_size = 2
 
 # Configuration Files
-[*.{json,xml,yml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
+[*.{json,xml,yml,yaml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
 indent_size = 2
 
 # Markdown Files
