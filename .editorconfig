@@ -20,8 +20,16 @@ indent_style = tab
 [*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
 indent_size = 2
 
-# Configuration Files
-[*.{json,xml,yml,yaml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
+# XML Configuration Files
+[*.{xml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
+indent_size = 2
+
+# JSON Files
+[*.{json,json5}]
+indent_size = 2
+
+# YAML Files
+[*.{yml,yaml}]
 indent_size = 2
 
 # Markdown Files
@@ -32,6 +40,9 @@ trim_trailing_whitespace = false
 [*.{htm,html,js,ts,css,scss,less}]
 indent_size = 2
 insert_final_newline = true
+
+# Batch Files
+[*.{cmd,bat}]
 
 # Bash Files
 [*.sh]
