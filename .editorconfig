@@ -1,5 +1,9 @@
 # http://EditorConfig.org
 
+#################
+# Common Settings
+#################
+
 # This file is the top-most EditorConfig file
 root = true
 
@@ -11,6 +15,10 @@ indent_style = space
 indent_size = 4
 insert_final_newline = false
 trim_trailing_whitespace = true
+
+#########################
+# File Extension Settings
+#########################
 
 # Solution Files
 [*.sln]
@@ -48,10 +56,10 @@ insert_final_newline = true
 [*.sh]
 end_of_line = lf
 
-######################
-# Language conventions
+###########################
+# .NET Language Conventions
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#language-conventions
-######################
+###########################
 
 # .NET Code Style Settings
 [*.{cs,csx,cake,vb}]
@@ -127,10 +135,10 @@ csharp_style_conditional_delegate_call = true:warning
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#code_block
 csharp_prefer_braces = true:warning
 
-########################
-# Formatting conventions
+#############################
+# .NET Formatting Conventions
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#formatting-conventions
-########################
+#############################
 
 # Organize usings
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#usings
@@ -182,10 +190,10 @@ csharp_space_between_empty_square_brackets = false:warning
 csharp_space_between_method_declaration_name_and_open_parenthesis = false:warning
 csharp_space_between_square_brackets = false:warning
 
-####################
-# Naming conventions
+#########################
+# .NET Naming conventions
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-naming-conventions
-####################
+#########################
 
 [*.{cs,csx,cake,vb}]
 # Naming Symbols
