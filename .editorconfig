@@ -48,10 +48,9 @@ insert_final_newline = true
 [*.sh]
 end_of_line = lf
 
-########################
-# Language conventions #
+# Language conventions
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#language-conventions
-########################
+######################
 
 # .NET Code Style Settings
 [*.{cs,csx,cake,vb}]
