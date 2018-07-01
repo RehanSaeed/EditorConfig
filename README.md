@@ -6,15 +6,17 @@ A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/m
 
 - C# - .cs, .csx, .cake
 - Visual Basic - .vb
-- Script - .sh, .ps1, psm1
-- Configuration - .json, .xml, .yml, .config, .props, .targets, .nuspec, .resx, .ruleset
+- Script - .sh, .ps1, .psm1, .bat, .cmd
+- XML - .xml, .config, .props, .targets, .nuspec, .resx, .ruleset
+- JSON - .json, .json5
+- YAML - .yml,  .yaml
 - HTML - .htm, .html
 - JavaScript - .js, .ts
 - CSS - .css, .scss, .less
 - Markdown - .md
 - Visual Studio - .sln, .csproj, .vbproj, .vcxproj, .vcxproj.filters, .proj, .projitems, .shproj
 
-All C# related code styles are consistent with [StyleCop's](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) default styles.
+Extensive code style settings for C# and VB.NET have been defined that require the latest C# features to be used. Also, all C# related code styles are consistent with [StyleCop's](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) default styles.
 
 # What is Editor Config
 
