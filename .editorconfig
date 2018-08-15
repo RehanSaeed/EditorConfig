@@ -28,7 +28,7 @@ indent_style = tab
 [*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
 indent_size = 2
 
-# Various XML Configuration Files
+# XML Configuration Files
 [*.{xml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
 indent_size = 2
 
