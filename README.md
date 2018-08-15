@@ -12,7 +12,7 @@ A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/m
 - YAML - .yml,  .yaml
 - HTML - .htm, .html
 - JavaScript - .js, .ts, .tsx, .vue
-- CSS - .css, .scss, .less
+- CSS - .css, .sass, .scss, .less
 - Markdown - .md
 - Visual Studio - .sln, .csproj, .vbproj, .vcxproj, .vcxproj.filters, .proj, .projitems, .shproj
 
