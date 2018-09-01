@@ -13,6 +13,7 @@ A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/m
 - HTML - .htm, .html
 - JavaScript - .js, .ts, .tsx, .vue
 - CSS - .css, .sass, .scss, .less
+- SVG - .svg
 - Markdown - .md
 - Visual Studio - .sln, .csproj, .vbproj, .vcxproj, .vcxproj.filters, .proj, .projitems, .shproj
 
