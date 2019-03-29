@@ -200,7 +200,7 @@ csharp_space_between_square_brackets = false
 [*.{cs,csx,cake,vb}]
 ######################################################################
 # Symbols Groups
-###################################################################### 
+######################################################################
 
 # BEGIN DOCUMENTATION FOR NAMING CONVENTIONS FOR FIELDS ==============
 # .NET Coding guidelines treat protected and public fields identically
@@ -221,30 +221,48 @@ csharp_space_between_square_brackets = false
 # -- {true, null      } == *** user-specified rules for private, internal, and protected fields ***
 # L. {true, null      } == catch-all for private, internal, and protected fields
 # M. {false,*         } == all other fields, as they are disallowed by .NET coding guidelines.
-# 
+#
 # END DOCUMENTATION FOR NAMING CONVENTIONS FOR FIELDS ================
 
-# A. public_constant_fields_group - allowed by design guidelines, and naming guidelines indicate PascalCasing 
-dotnet_naming_symbols.public_constant_fields_group.applicable_kinds           = field 
-dotnet_naming_symbols.public_constant_fields_group.applicable_accessibilities = public, protected 
-dotnet_naming_symbols.public_constant_fields_group.required_modifiers         = const 
-# B. public_static_readonly_fields_group - allowed by design guidelines, and naming guidelines indicate PascalCasing 
-dotnet_naming_symbols.public_static_readonly_fields_group.applicable_kinds           = field 
-dotnet_naming_symbols.public_static_readonly_fields_group.applicable_accessibilities = public, protected 
-dotnet_naming_symbols.public_static_readonly_fields_group.required_modifiers         = static, readonly 
+# A. public_constant_fields_group - allowed by design guidelines, and naming guidelines indicate PascalCasing
+dotnet_naming_symbols.public_constant_fields_group.applicable_accessibilities = public, protected, protected_internal
+dotnet_naming_symbols.public_constant_fields_group.required_modifiers         = const
+dotnet_naming_symbols.public_constant_fields_group.applicable_kinds           = field
+
+# B. public_static_readonly_fields_group - allowed by design guidelines, and naming guidelines indicate PascalCasing
+dotnet_naming_symbols.public_static_readonly_fields_group.applicable_accessibilities = public, protected, protected_internal
+dotnet_naming_symbols.public_static_readonly_fields_group.required_modifiers         = static, readonly
+dotnet_naming_symbols.public_static_readonly_fields_group.applicable_kinds           = field
 
 # BEGIN USER SYMBOL GROUPS ===========================================
-# *** User can create any number of groupings for fields that are private, internal, or protected_internal,
+# vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# *** User can create any number of groupings for fields that are not 'local'
 #     without impinging on .NET Naming Guidelines.
+
+## C. all_constant_fields_group - mimic group B but apply to ALL accessibility levels
+#dotnet_naming_symbols.all_constant_fields_group.applicable_accessibilities = public, protected, internal, private, protected_internal, private_protected
+#dotnet_naming_symbols.all_constant_fields_group.required_modifiers         = const
+#dotnet_naming_symbols.all_constant_fields_group.applicable_kinds           = field
+
+## D. all_static_readonly_fields_group - mimic group A but apply to ALL accessibility levels
+#dotnet_naming_symbols.all_static_readonly_fields_group.applicable_accessibilities = public, protected, internal, private, protected_internal, private_protected
+#dotnet_naming_symbols.all_static_readonly_fields_group.required_modifiers         = static, readonly
+#dotnet_naming_symbols.all_static_readonly_fields_group.applicable_kinds           = field
+
+## K. user_private_fields_group - allowed by coding guidelines, but naming is not specified by naming guidelines -- Set to PascalCase
+#dotnet_naming_symbols.user_private_fields_group.applicable_accessibilities = internal, private, private_protected
+#dotnet_naming_symbols.user_private_fields_group.applicable_kinds           = field
+
 # *** NOTE: StyleCop and other additional rulesets may add or require more splits here also.
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # END USER SYMBOL GROUPS =============================================
 
-# L. private_fields_group - allowed by coding guidelines, but naming is not specified by naming guidelines
-dotnet_naming_symbols.private_fields_group.applicable_kinds           = field 
-dotnet_naming_symbols.private_fields_group.applicable_accessibilities = private, internal, protected_internal 
+# L. private_fields_group - allowed by coding guidelines, but naming is not specified by naming guidelines -- Set to SILENT below
+dotnet_naming_symbols.private_fields_group.applicable_accessibilities = internal, private, private_protected
+dotnet_naming_symbols.private_fields_group.applicable_kinds           = field
 
 # M. match_all_fields_group - RULES should first use all above-matched field symbol groups...
-#    If it doesn't match any of #1/#2/#4, then the field is disallowed by coding guidelines
+#    If it doesn't match any of A/B/L (or user symbols groups), then the field is disallowed by coding guidelines
 dotnet_naming_symbols.match_all_fields_group.applicable_kinds = field
 
 # Q. public_symbols_group - Define any public symbol
@@ -387,7 +405,22 @@ dotnet_naming_rule.public_static_readonly_fields_must_be_pascal_case_rule.symbol
 dotnet_naming_rule.public_static_readonly_fields_must_be_pascal_case_rule.style    = pascal_case_style
 dotnet_naming_rule.public_static_readonly_fields_must_be_pascal_case_rule.severity = warning
 
-# L. private_fields_group
+## C. all_constant_fields_group
+#dotnet_naming_rule.all_constant_fields_must_be_pascal_case_rule.symbols  = all_static_readonly_fields_group
+#dotnet_naming_rule.all_constant_fields_must_be_pascal_case_rule.style    = pascal_case_style
+#dotnet_naming_rule.all_constant_fields_must_be_pascal_case_rule.severity = warning
+
+## D. all_static_readonly_fields_group
+#dotnet_naming_rule.all_static_readonly_fields_must_be_pascal_case_rule.symbols  = all_constant_fields_group
+#dotnet_naming_rule.all_static_readonly_fields_must_be_pascal_case_rule.style    = pascal_case_style
+#dotnet_naming_rule.all_static_readonly_fields_must_be_pascal_case_rule.severity = warning
+
+## K. user_private_fields_group
+#dotnet_naming_rule.user_private_fields_must_be_pascal_case_rule.symbols  = user_private_fields_group
+#dotnet_naming_rule.user_private_fields_must_be_pascal_case_rule.style    = pascal_case_style
+#dotnet_naming_rule.user_private_fields_must_be_pascal_case_rule.severity = warning
+
+# L. private_fields_group -- SILENT -- no warnings about naming style for private fields ...
 dotnet_naming_rule.private_fields_preference_is_pascal_case_rule.symbols  = private_fields_group
 dotnet_naming_rule.private_fields_preference_is_pascal_case_rule.style    = pascal_case_style
 dotnet_naming_rule.private_fields_preference_is_pascal_case_rule.severity = silent
@@ -396,7 +429,6 @@ dotnet_naming_rule.private_fields_preference_is_pascal_case_rule.severity = sile
 dotnet_naming_rule.disallowed_fields_should_be_made_obvious_rule.symbols  = match_all_fields_group
 dotnet_naming_rule.disallowed_fields_should_be_made_obvious_rule.style    = disallowed_by_design_guidelines_style
 dotnet_naming_rule.disallowed_fields_should_be_made_obvious_rule.severity = warning
-
 
 # Q. public_symbols_group
 dotnet_naming_rule.public_symbols_must_be_pascal_case_rule.symbols  = public_symbols_group
