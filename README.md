@@ -17,7 +17,10 @@ A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/m
 - Markdown - .md
 - Visual Studio - .sln, .csproj, .vbproj, .vcxproj, .vcxproj.filters, .proj, .projitems, .shproj
 
-Extensive code style settings for C# and VB.NET have been defined that require the latest C# features to be used. Also, all C# related code styles are consistent with [StyleCop's](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) default styles.
+### For .NET code
+Extensive code style settings for C# and VB.NET have been defined that require the latest C# features to be used.
+All C# related code styles are consistent with [StyleCop's](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) default styles.
+All .NET naming conventions are consistent with the .NET Framework Design Guideline's [Naming Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines).
 
 # What is Editor Config
 
