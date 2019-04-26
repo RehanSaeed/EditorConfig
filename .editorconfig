@@ -315,6 +315,15 @@ dotnet_naming_rule.stylecop_private_fields_rule.symbols  = stylecop_private_fiel
 dotnet_naming_rule.stylecop_private_fields_rule.style    = camel_case_style
 dotnet_naming_rule.stylecop_private_fields_rule.severity = warning
 
+# SC4a. stylecop_private_readonly_fields_group -- camelCase required
+#      See https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1306.md
+dotnet_naming_symbols.stylecop_private_readonly_fields_group.applicable_accessibilities = private
+dotnet_naming_symbols.stylecop_private_readonly_fields_group.required_modifiers         = readonly
+dotnet_naming_symbols.stylecop_private_readonly_fields_group.applicable_kinds           = field
+dotnet_naming_rule.stylecop_private_fields_rule.symbols  = stylecop_private_readonly_fields_group
+dotnet_naming_rule.stylecop_private_fields_rule.style    = camel_case_style
+dotnet_naming_rule.stylecop_private_fields_rule.severity = warning
+
 # SC5. local variables ... any naming convention applied?
 dotnet_naming_symbols.stylecop_local_field_group.applicable_accessibilities = local
 dotnet_naming_symbols.stylecop_local_field_group.applicable_kinds           = field
