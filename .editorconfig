@@ -221,8 +221,12 @@ dotnet_naming_style.prefix_type_parameters_with_t_style.capitalization = pascal_
 dotnet_naming_style.prefix_type_parameters_with_t_style.required_prefix = T
 # disallowed_style - Anything that has this style applied is marked as disallowed
 dotnet_naming_style.disallowed_style.capitalization  = pascal_case
-dotnet_naming_style.disallowed_style.required_prefix = ____NOT_ALLOWED____
-dotnet_naming_style.disallowed_style.required_suffix = ____NOT_ALLOWED____
+dotnet_naming_style.disallowed_style.required_prefix = ____RULE_VIOLATION____
+dotnet_naming_style.disallowed_style.required_suffix = ____RULE_VIOLATION____
+# internal_error_style - This style should never occur... if it does, it's indicates a bug in file or in the parser using the file
+dotnet_naming_style.internal_error_style.capitalization  = pascal_case
+dotnet_naming_style.internal_error_style.required_prefix = ____INTERNAL_ERROR____
+dotnet_naming_style.internal_error_style.required_suffix = ____INTERNAL_ERROR____
 
 ##########################################
 # .NET Design Guideline Field Naming Rules
@@ -305,6 +309,16 @@ dotnet_naming_rule.stylecop_local_fields_must_be_camel_case_rule.symbols     = s
 dotnet_naming_rule.stylecop_local_fields_must_be_camel_case_rule.style       = camel_case_style
 dotnet_naming_rule.stylecop_local_fields_must_be_camel_case_rule.severity    = silent
 
+# This rule should never fire.  However, it's included for at least two purposes:
+# First, it helps to understand, reason about, and root-case certain types of issues, such as bugs in .editorconfig parsers.
+# Second, it helps to raise immediate awareness if a new field type is added (as occurred recently in C#).
+dotnet_naming_symbols.sanity_check_uncovered_field_case_group.applicable_accessibilities = *
+dotnet_naming_symbols.sanity_check_uncovered_field_case_group.applicable_kinds           = field
+dotnet_naming_rule.sanity_check_uncovered_field_case_rule.symbols  = sanity_check_uncovered_field_case_group
+dotnet_naming_rule.sanity_check_uncovered_field_case_rule.style    = internal_error_style
+dotnet_naming_rule.sanity_check_uncovered_field_case_rule.severity = error
+
+
 ##########################################
 # Other Naming Rules
 ##########################################
@@ -349,7 +363,6 @@ dotnet_naming_rule.parameters_rule.severity             = warning
 ##########################################
 # License
 ##########################################
-
 # The following applies as to the .editorconfig file ONLY, and is
 # included below for reference, per the requirements of the license
 # corresponding to this .editorconfig file.
@@ -380,3 +393,4 @@ dotnet_naming_rule.parameters_rule.severity             = warning
 # WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 # OTHER DEALINGS IN THE SOFTWARE.
+##########################################
