@@ -258,7 +258,7 @@ dotnet_naming_rule.other_public_protected_fields_invalid_rule.severity          
 
 ##########################################
 # StyleCop Field Naming Rules
-# Naming rules for fields follow the StyleCop analyzers.
+# Naming rules for fields follow the StyleCop analyzers
 # This does not override any rules using invalid_style above
 # https://github.com/DotNetAnalyzers/StyleCopAnalyzers
 ##########################################
