@@ -1,5 +1,5 @@
-# Version: 1.0.1 (Using https://semver.org/)
-# Updated: 2019-05-09
+# Version: 1.0.2 (Using https://semver.org/)
+# Updated: 2019-05-22
 # See https://github.com/RehanSaeed/EditorConfig for updates to this file.
 # See http://EditorConfig.org for more information about .editorconfig files.
 
@@ -304,6 +304,7 @@ dotnet_naming_rule.stylecop_private_fields_must_be_camel_case_rule.severity    =
 # Local variables must be camelCase
 # https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1312.md
 dotnet_naming_symbols.stylecop_local_fields_group.applicable_accessibilities = local
+dotnet_naming_symbols.stylecop_local_fields_group.applicable_kinds           = local
 dotnet_naming_rule.stylecop_local_fields_must_be_camel_case_rule.symbols     = stylecop_local_fields_group
 dotnet_naming_rule.stylecop_local_fields_must_be_camel_case_rule.style       = camel_case_style
 dotnet_naming_rule.stylecop_local_fields_must_be_camel_case_rule.severity    = silent
