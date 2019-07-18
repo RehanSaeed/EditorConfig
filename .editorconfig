@@ -103,6 +103,7 @@ dotnet_style_prefer_conditional_expression_over_return = false:suggestion
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#null_checking
 dotnet_style_coalesce_expression = true:warning
 dotnet_style_null_propagation = true:warning
+# More style options (Undocumented)
 # https://github.com/MicrosoftDocs/visualstudio-docs/issues/3641
 dotnet_style_operator_placement_when_wrapping = end_of_line
 
