@@ -129,7 +129,7 @@ csharp_style_expression_bodied_properties = true:warning
 csharp_style_expression_bodied_indexers = true:warning
 csharp_style_expression_bodied_accessors = true:warning
 csharp_style_expression_bodied_lambdas = true:warning
-chsarp_style_expression_bodied_local_functions = true:warning
+csharp_style_expression_bodied_local_functions = true:warning
 # Pattern matching
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions#pattern-matching
 csharp_style_pattern_matching_over_is_with_cast_check = true:warning
