@@ -51,7 +51,6 @@ trim_trailing_whitespace = false
 # Web Files
 [*.{htm,html,js,ts,tsx,css,sass,scss,less,svg,vue}]
 indent_size = 2
-insert_final_newline = true
 
 # Batch Files
 [*.{cmd,bat}]
