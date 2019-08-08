@@ -148,8 +148,8 @@ csharp_style_conditional_delegate_call = true:warning
 csharp_prefer_braces = true:warning
 # Unused value preferences
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions#unused-value-preferences
-csharp_style_unused_value_expression_statement_preference = discard_variable:warning
-csharp_style_unused_value_assignment_preference = discard_variable:warning
+csharp_style_unused_value_expression_statement_preference = discard_variable:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 # Index and range preferences
 # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions#index-and-range-preferences
 csharp_style_prefer_index_operator = true:warning
