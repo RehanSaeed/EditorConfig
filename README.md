@@ -1,4 +1,4 @@
-![Editor Config Logo](https://media.githubusercontent.com/media/RehanSaeed/EditorConfig/master/logo.png)
+![Editor Config Banner](https://media.githubusercontent.com/media/RehanSaeed/EditorConfig/master/Banner.png)
 
 # Editor Config
 
