@@ -14,6 +14,7 @@ A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/m
 - SVG - .svg
 - Markdown - .md
 - Visual Studio - .sln, .csproj, .vbproj, .vcxproj, .vcxproj.filters, .proj, .projitems, .shproj
+- Makefile
 
 ### For .NET code
 Extensive code style settings for C# and VB.NET have been defined that require the latest C# features to be used.
