@@ -1,5 +1,5 @@
 # Version: 1.5.0 (Using https://semver.org/)
-# Updated: 2020-03-04
+# Updated: 2020-03-09
 # See https://github.com/RehanSaeed/EditorConfig/releases for release notes.
 # See https://github.com/RehanSaeed/EditorConfig for updates to this file.
 # See http://EditorConfig.org for more information about .editorconfig files.
@@ -28,10 +28,10 @@ trim_trailing_whitespace = true
 indent_style = tab
 
 # Visual Studio XML Project Files
-[*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
+[*.{csproj,vbproj,vcxproj.filters,proj,projitems,shproj}]
 indent_size = 2
 
-# Various XML Configuration Files
+# XML Configuration Files
 [*.{xml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
 indent_size = 2
 
@@ -48,7 +48,7 @@ indent_size = 2
 trim_trailing_whitespace = false
 
 # Web Files
-[*.{htm,html,js,ts,tsx,css,sass,scss,less,svg,vue}]
+[*.{htm,html,js,jsm,ts,tsx,css,sass,scss,less,svg,vue}]
 indent_size = 2
 
 # Batch Files
@@ -70,7 +70,7 @@ indent_style = tab
 
 # .NET Code Style Settings
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#net-code-style-settings
-[*.{cs,csx,cake,vb}]
+[*.{cs,csx,cake,vb,vbx}]
 # "this." and "Me." qualifiers
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#this-and-me
 dotnet_style_qualification_for_field = true:warning
@@ -115,6 +115,8 @@ dotnet_code_quality_unused_parameters = all:warning
 # More style options (Undocumented)
 # https://github.com/MicrosoftDocs/visualstudio-docs/issues/3641
 dotnet_style_operator_placement_when_wrapping = end_of_line
+# https://github.com/dotnet/roslyn/pull/40070
+dotnet_style_prefer_simplified_interpolation = true:warning
 
 # C# Code Style Settings
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#c-code-style-settings
@@ -226,7 +228,7 @@ csharp_preserve_single_line_blocks = true
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-naming-conventions
 ##########################################
 
-[*.{cs,csx,cake,vb}]
+[*.{cs,csx,cake,vb,vbx}]
 
 ##########################################
 # Styles
