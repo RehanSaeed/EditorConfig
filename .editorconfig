@@ -64,6 +64,18 @@ end_of_line = lf
 indent_style = tab
 
 ##########################################
+# File Header (Uncomment to support file headers)
+# https://docs.microsoft.com/en-us/visualstudio/ide/reference/add-file-header
+##########################################
+
+# [*.{cs,csx,cake,vb,vbx}]
+# file_header_template = <copyright file="{fileName}" company="PROJECT-AUTHOR">\nCopyright (©) 2020 PROJECT-AUTHOR. All Rights Reserved\n</copyright>
+
+# SA1636: File header copyright text should match
+# Justification: .editorconfig supports file headers, so specifying a stylecop.json file with the file header is not needed.
+# dotnet_diagnostic.SA1636.severity = none
+
+##########################################
 # .NET Language Conventions
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions
 ##########################################
