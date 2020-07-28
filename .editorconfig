@@ -69,7 +69,7 @@ indent_style = tab
 ##########################################
 
 # [*.{cs,csx,cake,vb,vbx}]
-# file_header_template = <copyright file="{fileName}" company="PROJECT-AUTHOR">\nCopyright (©) 2020 PROJECT-AUTHOR. All Rights Reserved\n</copyright>
+# file_header_template = <copyright file="{fileName}" company="PROJECT-AUTHOR">\nCopyright (©) PROJECT-AUTHOR. All Rights Reserved\n</copyright>
 
 # SA1636: File header copyright text should match
 # Justification: .editorconfig supports file headers, so specifying a stylecop.json file with the file header is not needed.

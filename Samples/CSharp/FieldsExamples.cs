@@ -1,5 +1,5 @@
 // <copyright file="FieldsExamples.cs" company="PROJECT-AUTHOR">
-// Copyright (©) 2020 PROJECT-AUTHOR. All Rights Reserved
+// Copyright (©) PROJECT-AUTHOR. All Rights Reserved
 // </copyright>
 
 namespace CSharpSamples
@@ -34,20 +34,20 @@ namespace CSharpSamples
          */
 
         // Allowed by both .NET Guidelines and StyleCop, and are properly PascalCased
-        public const int PascalCasePublicConstField = 1;
+        public        const    int PascalCasePublicConstField          = 1;
         public static readonly int PascalCasePublicStaticReadonlyField = 1;
 
         // Allowed by both .NET Guidelines and StyleCop, but should generate a warning due to use of camelCase
-        public const int camelCasePublicConstField = 1;
-        public static readonly int camelCasePublicStaticReadonlyField = 1;
+        public        const    int camelCasePublicConstField           = 1;
+        public static readonly int camelCasePublicStaticReadonlyField  = 1;
 
         // Prohibited by both .NET Guidelines and StyleCop (other publicly-exposed fields)
-        public static int PascalCasePublicStaticField = 1;
-        public static int camelCasePublicStaticField = 1;
-        public readonly int PascalCasePublicReadonlyField = 1;
-        public readonly int camelCasePublicReadonlyField = 1;
-        public int PascalCasePublicField = 1;
-        public int camelCasePublicField = 1;
+        public static          int PascalCasePublicStaticField         = 1;
+        public static          int camelCasePublicStaticField          = 1;
+        public        readonly int PascalCasePublicReadonlyField       = 1;
+        public        readonly int camelCasePublicReadonlyField        = 1;
+        public                 int PascalCasePublicField               = 1;
+        public                 int camelCasePublicField                = 1;
         #endregion // `Public` fields
         #region // `Internal` fields
         /*
@@ -68,20 +68,20 @@ namespace CSharpSamples
          */
 
         // Allowed by both .NET Guidelines and StyleCop, and are properly PascalCased
-        internal const int PascalCaseInternalConstField = 1;
+        internal        const    int PascalCaseInternalConstField          = 1;
         internal static readonly int PascalCaseInternalStaticReadonlyField = 1;
 
         // Allowed by both .NET Guidelines and StyleCop, but should generate a warning due to use of camelCase
-        internal const int camelCaseInternalConstField = 1;
-        internal static readonly int camelCaseInternalStaticReadonlyField = 1;
+        internal        const    int camelCaseInternalConstField           = 1;
+        internal static readonly int camelCaseInternalStaticReadonlyField  = 1;
 
         // Prohibited by both .NET Guidelines and StyleCop (other publicly-exposed fields)
-        internal static int PascalCaseInternalStaticField = 1;
-        internal static int camelCaseInternalStaticField = 1;
-        internal readonly int PascalCaseInternalReadonlyField = 1;
-        internal readonly int camelCaseInternalReadonlyField = 1;
-        internal int PascalCaseInternalField = 1;
-        internal int camelCaseInternalField = 1;
+        internal static          int PascalCaseInternalStaticField   = 1;
+        internal static          int camelCaseInternalStaticField    = 1;
+        internal        readonly int PascalCaseInternalReadonlyField = 1;
+        internal        readonly int camelCaseInternalReadonlyField  = 1;
+        internal                 int PascalCaseInternalField         = 1;
+        internal                 int camelCaseInternalField          = 1;
         #endregion // `Internal` fields
         #region // `Protected Internal` fields
         /*
@@ -109,20 +109,20 @@ namespace CSharpSamples
          */
 
         // Allowed by both .NET Guidelines and StyleCop, and are properly PascalCased
-        protected internal const int PascalCaseProtectedInternalConstField = 1;
+        protected internal        const    int PascalCaseProtectedInternalConstField          = 1;
         protected internal static readonly int PascalCaseProtectedInternalStaticReadonlyField = 1;
 
         // Allowed by both .NET Guidelines and StyleCop, but should generate a warning due to use of camelCase
-        protected internal const int camelCaseProtectedInternalConstField = 1;
-        protected internal static readonly int camelCaseProtectedInternalStaticReadonlyField = 1;
+        protected internal        const    int camelCaseProtectedInternalConstField           = 1;
+        protected internal static readonly int camelCaseProtectedInternalStaticReadonlyField  = 1;
 
         // Prohibited by both .NET Guidelines and StyleCop (other publicly-exposed fields)
-        protected internal static int PascalCaseProtectedInternalStaticStaticField = 1;
-        protected internal static int camelCaseProtectedInternalStaticField = 1;
-        protected internal readonly int PascalCaseProtectedInternalReadonlyField = 1;
-        protected internal readonly int camelCaseProtectedInternalReadonlyField = 1;
-        protected internal int PascalCaseProtectedInternalField = 1;
-        protected internal int camelCaseProtectedInternalField = 1;
+        protected internal static          int PascalCaseProtectedInternalStaticStaticField   = 1;
+        protected internal static          int camelCaseProtectedInternalStaticField          = 1;
+        protected internal        readonly int PascalCaseProtectedInternalReadonlyField       = 1;
+        protected internal        readonly int camelCaseProtectedInternalReadonlyField        = 1;
+        protected internal                 int PascalCaseProtectedInternalField               = 1;
+        protected internal                 int camelCaseProtectedInternalField                = 1;
         #endregion // `Protected Internal` fields
         #region // `Protected` fields
         /*
@@ -148,20 +148,20 @@ namespace CSharpSamples
          */
 
         // Allowed by both .NET Guidelines and StyleCop, and are properly PascalCased
-        protected const int PascalCaseProtectedConstField = 1;
+        protected        const    int PascalCaseProtectedConstField          = 1;
         protected static readonly int PascalCaseProtectedStaticReadonlyField = 1;
 
         // Allowed by both .NET Guidelines and StyleCop, but should generate a warning due to use of camelCase
-        protected const int camelCaseProtectedConstField = 1;
-        protected static readonly int camelCaseProtectedStaticReadonlyField = 1;
+        protected        const    int camelCaseProtectedConstField           = 1;
+        protected static readonly int camelCaseProtectedStaticReadonlyField  = 1;
 
         // Prohibited by both .NET Guidelines and StyleCop (other publicly-exposed fields)
-        protected static int PascalCaseProtectedStaticField = 1;
-        protected static int camelCaseProtectedStaticField = 1;
-        protected readonly int PascalCaseProtectedReadonlyField = 1;
-        protected readonly int camelCaseProtectedReadonlyField = 1;
-        protected int PascalCaseProtectedField = 1;
-        protected int camelCaseProtectedField = 1;
+        protected static          int PascalCaseProtectedStaticField         = 1;
+        protected static          int camelCaseProtectedStaticField          = 1;
+        protected        readonly int PascalCaseProtectedReadonlyField       = 1;
+        protected        readonly int camelCaseProtectedReadonlyField        = 1;
+        protected                 int PascalCaseProtectedField               = 1;
+        protected                 int camelCaseProtectedField                = 1;
         #endregion // `Protected` fields
         #region // `Private Protected` fields
         /*
@@ -182,20 +182,20 @@ namespace CSharpSamples
          */
 
         // Allowed by StyleCop, and are properly PascalCased (.NET guidelines silent on fields that are not publicly exposed)
-        private protected const int PascalCasePrivateProtectedConstField = 1;
+        private protected        const    int PascalCasePrivateProtectedConstField          = 1;
         private protected static readonly int PascalCasePrivateProtectedStaticReadonlyField = 1;
 
         // Allowed by StyleCop, and are properly camelCased (.NET guidelines silent on fields that are not publicly exposed)
-        private protected const int camelCasePrivateProtectedConstField = 1;
-        private protected static readonly int camelCasePrivateProtectedStaticReadonlyField = 1;
+        private protected        const    int camelCasePrivateProtectedConstField           = 1;
+        private protected static readonly int camelCasePrivateProtectedStaticReadonlyField  = 1;
 
         // Prohibited StyleCop (other publicly-exposed fields)
-        private protected static int PascalCasePrivateProtectedStaticField = 1;
-        private protected static int camelCasePrivateProtectedStaticField = 1;
-        private protected readonly int PascalCasePrivateProtectedReadonlyField = 1;
-        private protected readonly int camelCasePrivateProtectedReadonlyField = 1;
-        private protected int PascalCasePrivateProtectedField = 1;
-        private protected int camelCasePrivateProtectedField = 1;
+        private protected static          int PascalCasePrivateProtectedStaticField         = 1;
+        private protected static          int camelCasePrivateProtectedStaticField          = 1;
+        private protected        readonly int PascalCasePrivateProtectedReadonlyField       = 1;
+        private protected        readonly int camelCasePrivateProtectedReadonlyField        = 1;
+        private protected                 int PascalCasePrivateProtectedField               = 1;
+        private protected                 int camelCasePrivateProtectedField                = 1;
         #endregion // `Private Protected` fields
         #region // `Private` fields
         /*
@@ -214,22 +214,22 @@ namespace CSharpSamples
          */
 
         // Allowed by StyleCop, and are properly PascalCased (.NET guidelines silent on fields that are not publicly exposed)
-        private const int PascalCasePrivateConstField = 1;
+        private        const    int PascalCasePrivateConstField          = 1;
         private static readonly int PascalCasePrivateStaticReadonlyField = 1;
 
         // Allowed by StyleCop, and are properly camelCased (.NET guidelines silent on fields that are not publicly exposed)
-        private static int camelCasePrivateStaticField = 1;
-        private readonly int camelCasePrivateReadonlyField = 1;
-        private int camelCasePrivateField = 1;
+        private static          int camelCasePrivateStaticField          = 1;
+        private        readonly int camelCasePrivateReadonlyField        = 1;
+        private                 int camelCasePrivateField                = 1;
 
         // Allowed by StyleCop, but should generate a warning due to use of camelCase
-        private const int camelCasePrivateConstField = 1;
-        private static readonly int camelCasePrivateStaticReadonlyField = 1;
+        private        const    int camelCasePrivateConstField           = 1;
+        private static readonly int camelCasePrivateStaticReadonlyField  = 1;
 
         // Allowed by StyleCop, but should generate a warning due to use of PascalCase
-        private static int PascalCasePrivateStaticField = 1;
-        private readonly int PascalCasePrivateReadonlyField = 1;
-        private int PascalCasePrivateField = 1;
+        private static          int PascalCasePrivateStaticField         = 1;
+        private        readonly int PascalCasePrivateReadonlyField       = 1;
+        private                 int PascalCasePrivateField               = 1;
         #endregion // `Private` fields
 
         private void Foo() // To get around warnings telling you fields must be readonly.
