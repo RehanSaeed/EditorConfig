@@ -1,5 +1,8 @@
-// Copyright (c) 2019 Henry Gabryjelski
-namespace My
+// <copyright file="FieldsExamples.cs" company="PROJECT-AUTHOR">
+// Copyright (©) PROJECT-AUTHOR. All Rights Reserved
+// </copyright>
+
+namespace CSharpSamples
 {
     internal class FieldsExamples
     {
