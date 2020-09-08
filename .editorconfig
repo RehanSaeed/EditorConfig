@@ -63,6 +63,10 @@ end_of_line = lf
 [Makefile]
 indent_style = tab
 
+# XML Resource Files
+[*.resx]
+charset = utf-8bom
+
 ##########################################
 # File Header (Uncomment to support file headers)
 # https://docs.microsoft.com/en-us/visualstudio/ide/reference/add-file-header
