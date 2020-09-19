@@ -1,4 +1,4 @@
-# Version: 1.6.0 (Using https://semver.org/)
+# Version: 1.6.1 (Using https://semver.org/)
 # Updated: 2020-07-28
 # See https://github.com/RehanSaeed/EditorConfig/releases for release notes.
 # See https://github.com/RehanSaeed/EditorConfig for updates to this file.
@@ -73,7 +73,7 @@ indent_style = tab
 
 # SA1636: File header copyright text should match
 # Justification: .editorconfig supports file headers, so specifying a stylecop.json file with the file header is not needed.
-# dotnet_diagnostic.SA1636.severity = none
+# dotnet_diagnostic.SA1636.severity = warning
 
 ##########################################
 # .NET Language Conventions
