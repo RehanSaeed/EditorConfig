@@ -1,5 +1,5 @@
-// <copyright file="FieldsExamples.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
+// <copyright file="FieldsExamples.cs" company="PROJECT-AUTHOR">
+// © PROJECT-AUTHOR
 // </copyright>
 
 namespace CSharpSamples

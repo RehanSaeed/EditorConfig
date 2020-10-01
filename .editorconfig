@@ -1,5 +1,5 @@
 # Version: 1.6.1 (Using https://semver.org/)
-# Updated: 2020-09-21
+# Updated: 2020-10-01
 # See https://github.com/RehanSaeed/EditorConfig/releases for release notes.
 # See https://github.com/RehanSaeed/EditorConfig for updates to this file.
 # See http://EditorConfig.org for more information about .editorconfig files.
@@ -69,11 +69,11 @@ indent_style = tab
 ##########################################
 
 # [*.{cs,csx,cake,vb,vbx}]
-# file_header_template = <copyright file="{fileName}" company="PlaceholderCompany">\nCopyright (c) PlaceholderCompany. All rights reserved.\n</copyright>
+# file_header_template = <copyright file="{fileName}" company="PROJECT-AUTHOR">\n© PROJECT-AUTHOR\n</copyright>
 
 # SA1636: File header copyright text should match
-# Justification: .editorconfig supports file headers, so specifying a stylecop.json file with the file header is not needed.
-# dotnet_diagnostic.SA1636.severity = warning
+# Justification: .editorconfig supports file headers. If this is changed to a value other than "none", a stylecop.json file will need to added to the project.
+# dotnet_diagnostic.SA1636.severity = none
 
 ##########################################
 # .NET Language Conventions

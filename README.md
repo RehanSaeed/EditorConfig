@@ -19,7 +19,7 @@ A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/m
 ### .NET Code Style
 
 Extensive code style settings for C# and VB.NET have been defined that require the latest C# features to be used.
-All C# related code styles are consistent with [StyleCop's](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) default styles.
+All C# related code styles are consistent with [StyleCop's](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) default styles, with the exception of the file header definition, which has been changed to a more modern format.
 All .NET naming conventions are consistent with the .NET Framework Design Guideline's [Naming Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines).
 
 # What is .editorconfig?
