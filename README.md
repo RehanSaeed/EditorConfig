@@ -1,6 +1,6 @@
 ![.editorconfig Banner](Images/Banner.png)
 
-A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/master/.editorconfig) file supporting the following file types:
+A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/main/.editorconfig) file supporting the following file types:
 
 - C# - .cs, .csx, .cake
 - Visual Basic - .vb, vbx
