@@ -1,5 +1,5 @@
-# Version: 1.6.2 (Using https://semver.org/)
-# Updated: 2020-11-02
+# Version: 2.0.1 (Using https://semver.org/)
+# Updated: 2020-12-11
 # See https://github.com/RehanSaeed/EditorConfig/releases for release notes.
 # See https://github.com/RehanSaeed/EditorConfig for updates to this file.
 # See http://EditorConfig.org for more information about .editorconfig files.
@@ -64,6 +64,15 @@ end_of_line = lf
 indent_style = tab
 
 ##########################################
+# Default .NET Code Style Severities
+# https://docs.microsoft.com/dotnet/fundamentals/code-analysis/configuration-options#scope
+##########################################
+
+[*.{cs,csx,cake,vb,vbx}]
+# Default Severity for all .NET Code Style rules below
+dotnet_analyzer_diagnostic.severity = warning
+
+##########################################
 # File Header (Uncomment to support file headers)
 # https://docs.microsoft.com/visualstudio/ide/reference/add-file-header
 ##########################################
@@ -104,7 +113,7 @@ dotnet_style_readonly_field = true:warning
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:warning
 dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:warning
 dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:warning
-dotnet_style_parentheses_in_other_operators = never_if_unnecessary:suggestion
+dotnet_style_parentheses_in_other_operators = always_for_clarity:suggestion
 # Expression-level preferences
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#expression-level-preferences
 dotnet_style_object_initializer = true:warning
@@ -115,7 +124,9 @@ dotnet_style_prefer_inferred_anonymous_type_member_names = true:warning
 dotnet_style_prefer_auto_properties = true:warning
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
 dotnet_style_prefer_conditional_expression_over_assignment = false:suggestion
+dotnet_diagnostic.IDE0045.severity = suggestion
 dotnet_style_prefer_conditional_expression_over_return = false:suggestion
+dotnet_diagnostic.IDE0046.severity = suggestion
 dotnet_style_prefer_compound_assignment = true:warning
 # Null-checking preferences
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#null-checking-preferences
@@ -168,7 +179,9 @@ csharp_prefer_braces = true:warning
 # Unused value preferences
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#unused-value-preferences
 csharp_style_unused_value_expression_statement_preference = discard_variable:suggestion
+dotnet_diagnostic.IDE0058.severity = suggestion
 csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+dotnet_diagnostic.IDE0059.severity = suggestion
 # Index and range preferences
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#index-and-range-preferences
 csharp_style_prefer_index_operator = true:warning
@@ -180,6 +193,7 @@ csharp_style_pattern_local_over_anonymous_function = true:warning
 csharp_using_directive_placement = inside_namespace:warning
 csharp_prefer_static_local_function = true:warning
 csharp_prefer_simple_using_statement = true:suggestion
+dotnet_diagnostic.IDE0063.severity = suggestion
 
 ##########################################
 # .NET Formatting Conventions
