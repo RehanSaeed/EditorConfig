@@ -10,7 +10,7 @@ A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/m
 - YAML - .yml,  .yaml
 - HTML - .htm, .html
 - JavaScript - .js, .jsm, .ts, .tsx, .vue
-- CSS - .css, .sass, .scss, .less
+- CSS - .css, .sass, .scss, .less, .pcss
 - SVG - .svg
 - Markdown - .md
 - Visual Studio - .sln, .csproj, .vbproj, .vcxproj, .vcxproj.filters, .proj, .projitems, .shproj
