@@ -81,41 +81,41 @@ dotnet_analyzer_diagnostic.severity = warning
 # https://docs.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/language-rules#net-style-rules
 [*.{cs,csx,cake,vb,vbx}]
 # "this." and "Me." qualifiers
-dotnet_style_qualification_for_field = true:warning
-dotnet_style_qualification_for_property = true:warning
-dotnet_style_qualification_for_method = true:warning
-dotnet_style_qualification_for_event = true:warning
+dotnet_style_qualification_for_field = true
+dotnet_style_qualification_for_property = true
+dotnet_style_qualification_for_method = true
+dotnet_style_qualification_for_event = true
 # Language keywords instead of framework type names for type references
-dotnet_style_predefined_type_for_locals_parameters_members = true:warning
-dotnet_style_predefined_type_for_member_access = true:warning
+dotnet_style_predefined_type_for_locals_parameters_members = true
+dotnet_style_predefined_type_for_member_access = true
 # Modifier preferences
-dotnet_style_require_accessibility_modifiers = always:warning
-csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:warning
-visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:warning
-dotnet_style_readonly_field = true:warning
+dotnet_style_require_accessibility_modifiers = always
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async
+visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async
+dotnet_style_readonly_field = true
 # Parentheses preferences
-dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:warning
-dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:warning
-dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:warning
-dotnet_style_parentheses_in_other_operators = always_for_clarity:suggestion
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_other_operators = always_for_clarity
 # Expression-level preferences
-dotnet_style_object_initializer = true:warning
-dotnet_style_collection_initializer = true:warning
-dotnet_style_explicit_tuple_names = true:warning
-dotnet_style_prefer_inferred_tuple_names = true:warning
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:warning
-dotnet_style_prefer_auto_properties = true:warning
-dotnet_style_prefer_conditional_expression_over_assignment = false:suggestion
+dotnet_style_object_initializer = true
+dotnet_style_collection_initializer = true
+dotnet_style_explicit_tuple_names = true
+dotnet_style_prefer_inferred_tuple_names = true
+dotnet_style_prefer_inferred_anonymous_type_member_names = true
+dotnet_style_prefer_auto_properties = true
+dotnet_style_prefer_conditional_expression_over_assignment = false
 dotnet_diagnostic.IDE0045.severity = suggestion
-dotnet_style_prefer_conditional_expression_over_return = false:suggestion
+dotnet_style_prefer_conditional_expression_over_return = false
 dotnet_diagnostic.IDE0046.severity = suggestion
-dotnet_style_prefer_compound_assignment = true:warning
-dotnet_style_prefer_simplified_interpolation = true:warning
-dotnet_style_prefer_simplified_boolean_expressions = true:warning
+dotnet_style_prefer_compound_assignment = true
+dotnet_style_prefer_simplified_interpolation = true
+dotnet_style_prefer_simplified_boolean_expressions = true
 # Null-checking preferences
-dotnet_style_coalesce_expression = true:warning
-dotnet_style_null_propagation = true:warning
-dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
+dotnet_style_coalesce_expression = true
+dotnet_style_null_propagation = true
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true
 # File header preferences
 # file_header_template = <copyright file="{fileName}" company="PROJECT-AUTHOR">\n© PROJECT-AUTHOR\n</copyright>
 # If you use StyleCop, you'll need to disable SA1636: File header copyright text should match.
@@ -127,43 +127,43 @@ dotnet_style_operator_placement_when_wrapping = end_of_line
 # https://docs.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/language-rules#c-style-rules
 [*.{cs,csx,cake}]
 # 'var' preferences
-csharp_style_var_for_built_in_types = true:warning
-csharp_style_var_when_type_is_apparent = true:warning
-csharp_style_var_elsewhere = true:warning
+csharp_style_var_for_built_in_types = true
+csharp_style_var_when_type_is_apparent = true
+csharp_style_var_elsewhere = true
 # Expression-bodied members
-csharp_style_expression_bodied_methods = true:warning
-csharp_style_expression_bodied_constructors = true:warning
-csharp_style_expression_bodied_operators = true:warning
-csharp_style_expression_bodied_properties = true:warning
-csharp_style_expression_bodied_indexers = true:warning
-csharp_style_expression_bodied_accessors = true:warning
-csharp_style_expression_bodied_lambdas = true:warning
-csharp_style_expression_bodied_local_functions = true:warning
+csharp_style_expression_bodied_methods = true
+csharp_style_expression_bodied_constructors = true
+csharp_style_expression_bodied_operators = true
+csharp_style_expression_bodied_properties = true
+csharp_style_expression_bodied_indexers = true
+csharp_style_expression_bodied_accessors = true
+csharp_style_expression_bodied_lambdas = true
+csharp_style_expression_bodied_local_functions = true
 # Pattern matching preferences
-csharp_style_pattern_matching_over_is_with_cast_check = true:warning
-csharp_style_pattern_matching_over_as_with_null_check = true:warning
-csharp_style_prefer_switch_expression = true:warning
-csharp_style_prefer_pattern_matching = true:warning
-csharp_style_prefer_not_pattern = true:warning
+csharp_style_pattern_matching_over_is_with_cast_check = true
+csharp_style_pattern_matching_over_as_with_null_check = true
+csharp_style_prefer_switch_expression = true
+csharp_style_prefer_pattern_matching = true
+csharp_style_prefer_not_pattern = true
 # Expression-level preferences
-csharp_style_inlined_variable_declaration = true:warning
-csharp_prefer_simple_default_expression = true:warning
-csharp_style_pattern_local_over_anonymous_function = true:warning
-csharp_style_deconstructed_variable_declaration = true:warning
-csharp_style_prefer_index_operator = true:warning
-csharp_style_prefer_range_operator = true:warning
-csharp_style_implicit_object_creation_when_type_is_apparent = true:warning
+csharp_style_inlined_variable_declaration = true
+csharp_prefer_simple_default_expression = true
+csharp_style_pattern_local_over_anonymous_function = true
+csharp_style_deconstructed_variable_declaration = true
+csharp_style_prefer_index_operator = true
+csharp_style_prefer_range_operator = true
+csharp_style_implicit_object_creation_when_type_is_apparent = true
 # "Null" checking preferences
-csharp_style_throw_expression = true:warning
-csharp_style_conditional_delegate_call = true:warning
+csharp_style_throw_expression = true
+csharp_style_conditional_delegate_call = true
 # Code block preferences
-csharp_prefer_braces = true:warning
-csharp_prefer_simple_using_statement = true:suggestion
+csharp_prefer_braces = true
+csharp_prefer_simple_using_statement = true
 dotnet_diagnostic.IDE0063.severity = suggestion
 # 'using' directive preferences
-csharp_using_directive_placement = inside_namespace:warning
+csharp_using_directive_placement = inside_namespace
 # Modifier preferences
-csharp_prefer_static_local_function = true:warning
+csharp_prefer_static_local_function = true
 
 ##########################################
 # Unnecessary Code Rules
@@ -172,14 +172,14 @@ csharp_prefer_static_local_function = true:warning
 
 # .NET Unnecessary code rules
 [*.{cs,csx,cake,vb,vbx}]
-dotnet_code_quality_unused_parameters = all:warning
-dotnet_remove_unnecessary_suppression_exclusions = none:warning
+dotnet_code_quality_unused_parameters = all
+dotnet_remove_unnecessary_suppression_exclusions = none
 
 # C# Unnecessary code rules
 [*.{cs,csx,cake}]
-csharp_style_unused_value_expression_statement_preference = discard_variable:suggestion
+csharp_style_unused_value_expression_statement_preference = discard_variable
 dotnet_diagnostic.IDE0058.severity = suggestion
-csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable
 dotnet_diagnostic.IDE0059.severity = suggestion
 
 ##########################################
