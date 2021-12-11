@@ -57,7 +57,6 @@ end_of_line = crlf
 
 # PowerShell Files
 [*.{ps1,ps1x,psm1,psd1,ps1xml,pssc,psrc,cdxml}]
-indent_size = 2
 end_of_line = crlf
 
 # Bash Files
