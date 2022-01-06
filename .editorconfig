@@ -134,7 +134,7 @@ csharp_style_var_for_built_in_types = true:warning
 csharp_style_var_when_type_is_apparent = true:warning
 csharp_style_var_elsewhere = true:warning
 # Expression-bodied members
-csharp_style_expression_bodied_methods = true:warning
+csharp_style_expression_bodied_methods=when_on_single_line:suggestion
 csharp_style_expression_bodied_constructors = true:warning
 csharp_style_expression_bodied_operators = true:warning
 csharp_style_expression_bodied_properties = true:warning
