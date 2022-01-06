@@ -30,6 +30,9 @@ EditorConfig helps developers define and maintain consistent coding styles betwe
 
 All you have to do is drop it into the root of your project. Then any time you open a file in Visual Studio, the .editorconfig file settings will be used to help format the document and also raise warnings if your code style and formatting does not conform. For Visual Studio Code, you can install the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extension to get support.
 
+## CBB
+Run `Install.ps1` to create a symlink in the parent folder to this repo. If you have all your repos in the same parent folder you now have a global .editorconfig
+
 # How can I get it?
 
 Download the `.editorconfig` file in this repository or you can install the [.NET Boxed](https://github.com/Dotnet-Boxed/Templates) templates and use the `dotnet new` CLI to create a new `.editorconfig` file in you current directory like so:
