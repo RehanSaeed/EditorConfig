@@ -36,5 +36,5 @@ Download the `.editorconfig` file in this repository or you can install the [.NE
 
 ```powershell
 dotnet new --install Boxed.Templates
-dotnet new editorconfig
+dotnet new editorconf
 ```
