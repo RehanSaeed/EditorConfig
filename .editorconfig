@@ -64,6 +64,15 @@ end_of_line = lf
 indent_style = tab
 
 ##########################################
+# Visual Studio Spell Checker
+# https://learn.microsoft.com/visualstudio/ide/text-spell-checker
+##########################################
+
+spelling_languages = en-gb
+spelling_error_severity = information
+spelling_checkable_types =
+
+##########################################
 # Default .NET Code Style Severities
 # https://learn.microsoft.com/dotnet/fundamentals/code-analysis/configuration-options#scope
 ##########################################
