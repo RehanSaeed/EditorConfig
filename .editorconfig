@@ -212,6 +212,10 @@ csharp_style_var_for_built_in_types = true
 csharp_style_var_when_type_is_apparent = true
 csharp_style_var_elsewhere = true
 
+# Undocumented
+# https://github.com/dotnet/docs/issues/28791
+csharp_style_prefer_primary_constructors = true # NEW
+
 ##########################################
 # .NET Coding Conventions - .NET
 # https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/dotnet-formatting-options
