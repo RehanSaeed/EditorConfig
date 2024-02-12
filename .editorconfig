@@ -191,7 +191,7 @@ csharp_style_prefer_tuple_swap = true # NEW
 csharp_style_prefer_utf8_string_literals = true # NEW
 
 # Modifier preferences
-csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async
+csharp_preferred_modifier_order = public,private,protected,internal,file,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,required,volatile,async
 csharp_prefer_static_local_function = true
 csharp_style_prefer_readonly_struct = true # NEW
 csharp_style_prefer_readonly_struct_member = true # NEW
